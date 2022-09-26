@@ -18,7 +18,7 @@ public class HR6121_23 {
 				sor = br.readLine();
 					if (sorid == 0) {
 						bw = new BufferedWriter(new FileWriter(sor + ".txt"));
-						filenev = (sor + "txt");
+						filenev = (sor + ".txt");
 					}
 					else {
 						bw.write(sor);
@@ -39,6 +39,5 @@ public class HR6121_23 {
 		} catch (Exception ee){
 			ee.printStackTrace();
 		}
-		System.out.println(filenev);
-		}
-		}
+	}
+}
