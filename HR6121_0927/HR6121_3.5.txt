@@ -1,0 +1,11 @@
+egy campuson több könyvtár lehet
+egy köny egy könyvtárhoz tartozik
+egy könyvnek lehet több szerzője
+egy szerzőnek lehet több könyve
+egy hallgató több könyvet is használ
+egy könyvet több hallgató is használhat
+egy hallgatónak egy egyedi neptunkódja, és egy neve van
+egy könyvnek egy egyedi ISBN száma, és egy címe van
+egy könyvtárnak egy neve, és egy egyedi könyvtár kódja van
+egy szerzőnek egy egyedi kódja, egy neve, és egy (vagy több) email címe van
+egy campusnak egy egyedi azonosítója, és egy címe van
