@@ -1,0 +1,48 @@
+insert into Autobusz values(1, ’AAA-111’, ’Ikarus’, ’40’);
+insert into Autobusz values(2, ’BBB-222’, ’Man’, ’45’);
+insert into Autobusz values(3, ’CCC-333’, ’Volvo’, ’50’);
+insert into Autobusz values(4, ’DDD-444’, ’Ikarus’, ’40’);
+insert into Autobusz values(5, ’EEE-555’, ’Ikarus’, ’40’);
+insert into Autobusz values(6, ’FFF-666’, ’Ikarus’, ’40’);
+insert into Autobusz values(7, ’GGG-777’, ’Volvo’, ’50’);
+insert into Autobusz values(8, ’HHH-888’, ’Ikarus’, ’40’);
+insert into Autobusz values(9, ’III-999’, ’Man’, ’45’);
+insert into Autobusz values(10, ’JJJ-000’, ’Ikarus’, ’40’);
+
+insert into Sofor values(100,’A54321’ ,’Mejer Dániel’, 9);
+insert into Sofor values(101,’B12345’ ,’Galambos Judit’, 5);
+insert into Sofor values(102,’C98765’ ,’Benkö Rezső’, 3);
+insert into Sofor values(103,’D56789’ ,’Illés Pázmán’, 8);
+insert into Sofor values(104,’E23456’ ,’Kuruc Adorjan’, 1);
+insert into Sofor values(105,’F65432’ ,’Faragó Keled’, 2);
+insert into Sofor values(106,’G34567’ ,’Gáspár Veronika’, 3);
+insert into Sofor values(107,’H76543’ ,’Pataky Gitta’, 4);
+insert into Sofor values(108,’I45678’ ,’Nagy Borka’, 6);
+insert into Sofor values(109,’J87654’ ,’Szöke Csongor’, 5);
+
+insert into Karbantarto values(001,’A0001’ ,’Lázár Csilla’, 4);
+insert into Karbantarto values(002,’B0002’ ,’Simka Armand’, 3);
+insert into Karbantarto values(003,’C0003’ ,’Katona József’, 1);
+insert into Karbantarto values(004,’D0004’ ,’Józsa Tünde’, 8);
+insert into Karbantarto values(005,’E0005’ ,’Szöllős Fruzsina’, 9);
+
+insert into Utvonal values(2, ’Búza Tér, ’Tapolca’, ’8’);
+insert into Utvonal values(3, ’Búza Tér’, ’Szirma’, ’9’);
+insert into Utvonal values(5, ’Felső-Majláth’, ’Lillafüred’, ’6’);
+insert into Utvonal values(6, ’Újgyőri Főtér’, ’Pereces’, ’7’);
+insert into Utvonal values(35, ’Avas Kilátó’, ’Centrum’, ’5’);
+
+insert into Halad values(3, 2, 25);
+insert into Halad values(1, 6, 26 );
+insert into Halad values(7, 35, 19 );
+insert into Halad values(2, 3, 24);
+insert into Halad values(3, 6, 21);
+insert into Halad values(9, 5, 20);
+insert into Halad values(1, 35, 23);
+
+
+insert into Felugyelo values(01,’Pataki Csanád’ , 102, 004, 06709876543, pat.csan@gmail.com);
+insert into Felugyelo values(02,’Gábor Borbála’ , 104, 002, 06701234567, gab.bor@gmail.com);
+insert into Felugyelo values(03,’Szabó Oszkár’ , 103, 001, 06706549876, szab.osz@gmail.com);
+insert into Felugyelo values(04,’Hegyi Bora’ , 108, 003, 06701597463, hegy.bor@gmail.com);
+insert into Felugyelo values(05,’Nagy Andrea’ , 109, 005, 06709657412, nagy.and@gmail.com);
