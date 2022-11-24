@@ -1,0 +1,10 @@
+select count(*) from Autobusz where tipus like ’man’;
+select * from Autobusz where BID=4;
+select tipus, count(*) from Autobusz group by tipus order by count(*) asc;
+select * from Autobusz where tipus like ’ikarus’;
+select UID from Utvonal where kezdeti_allomas like 'Búza Tér';
+select tipus from Autobusz inner join Halad on Halad.BID = Autobusz.BID where UID in (select UID from Utvonal where vegallomas='Lillafüred');
+select rendszam, nev from Autobusz inner join Sofor on Autobusz.BID = Sofor.BID order by rendszam;
+select nev from Felugyelo where SID=103;
+select SID, nev, jegykiado_szam, Sofor.BID from Sofor inner join Halad on Sofor.BID = Halad.BID where UID = 2 order by nev;
+select  * from Autobusz inner join Halad on Halad.BID = Autobusz.BID where tipus like 'Ikarus' and UID = 6

@@ -3,6 +3,5 @@ create table Sofor(SID integer(5), primary key (SID), jegykiado_szam text(10), n
 create table Karbantarto(KID integer(5), primary key (KID), javitoi_szam text(10), nev text(25), BID integer(5), foreign key(BID) references Autobusz(BID));
 create table Utvonal(UID integer(5), primary key (UID), kezdeti_allomas text(25), vegallomas text(25), km integer(3));
 create table Halad(BID integer(5), UID integer(5), menetido integer(3), foreign key(BID) references Autobusz(BID), foreign key(UID) references Utvonal(UID));
-create table Felugyelo(FID integer(5), primary key (FID), nev text(25), SID integer(5), KID integer(5), foreign key(SID) references Sofor(SID), foreign key(KID) references Karbantarto(KID), telefonszam integer(11), email text(25));
-
-
+create table Felugyelo(FID integer(5), primary key (FID), nev text(25), SID integer(5), KID integer(5), foreign key(SID) references Sofor(SID), foreign key(KID) references Karbantarto(KID), telefonszam integer(15), email text(25));
+create table Eszkoz(EID integer(5), primary key(EID), termek_szam integer(10), gyarto text(30), hasznalt_evek integer(2), KID integer(5), foreign key(KID) references Karbantarto(KID));
