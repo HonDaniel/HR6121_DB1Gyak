@@ -1,4 +1,4 @@
-select count(*) from Autobusz where tipus like ’man’;
+select count(*) from Autobusz where tipus like 'man';
 select * from Autobusz where BID=4;
 select tipus, count(*) from Autobusz group by tipus order by count(*) asc;
 select * from Autobusz where tipus like ’ikarus’;

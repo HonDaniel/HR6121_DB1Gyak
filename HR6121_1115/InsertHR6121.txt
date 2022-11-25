@@ -1,0 +1,15 @@
+insert into Oktato values('GE2E4A', 'Halos Eszter', 'Matematika Tanszek');
+insert into Oktato values('LD9K7Y', 'Magyar Karoly', 'Fizika Tanszek');
+insert into Oktato values('PN859M', 'Budai Szilveszter', 'Informatikai Tanszek');
+
+insert into Targy values('GF-999', 5, 'Fizika');
+insert into Targy values('GI-485', 3, 'Bevezetes a programozasba');
+insert into Targy values('GM-174', 4, 'Linearis algebra');
+
+insert into Hallgato values('PYA153', 'Szende Patrik', 'GE-BF1', 2002-01-02, 20, 3500, 'Miskolc', 'Kossuth', 23);
+insert into Hallgato values('1LMK5C', 'Nemet Hanna', 'GE-BG2', 2001-05-20, 21, 3600, 'Ozd', 'Ujvaros', 1);
+insert into Hallgato values('KMOPLC', 'Szitai Daniel', 'GE-BI2', 2000-09-10, 22, 3525, 'Miskolc', 'Rakoczi', 40);
+
+insert into Hallgat values('GF-999', 'PYA153', 1, 4);
+insert into Hallgat values('GI-485', '1LMK5C', 2, 2);
+insert into Hallgat values('GM-174', 'KMOPLC', 3, 5);

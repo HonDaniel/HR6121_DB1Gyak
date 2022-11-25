@@ -1,0 +1,19 @@
+X kategóriájú termékek neve és kódja:
+SELECT nev, tkod FROM termek WHERE kategoria='X';
+πnev,tkod σkategoria='X'(termek)
+
+Termékek neve és a gyártó neve együtt:
+SELECT nev, gyarto.nev FROM termek JOIN gyarto ON termek.gyarto = gyarto.adoszam;
+πnev, gyarto.nev σ(termek >< gyarto.adoszam = termek.gyarto gyarto)
+
+X kategóriájú termékek gyártóinak nevei:
+SELECT nev FROM gyarto JOIN termek ON gyarto.adoszam=termek.gyarto WHERE termek.kategoria='X';
+πnev σ(termek.kategoria='X')(termek >< gyarto.adoszam = termek.gyarto gyarto)
+
+Y-nál drágább termékek darabszáma
+SELECT COUNT(tkod) FROM termek HAVING ear>Y;
+πCOUNT(tkod) σear>Y(termek)
+
+Y-nál drágább termékek gyártóinak darabszáma
+SELECT COUNT(adoszam) FROM gyarto JOIN termek ON gyarto.adoszam=termek.gyarto WHERE termek.ear > Y;
+πCOUNT(adoszam) σ(termek.ear>Y)(termek >< gyarto.adoszam = termek.gyarto gyarto)

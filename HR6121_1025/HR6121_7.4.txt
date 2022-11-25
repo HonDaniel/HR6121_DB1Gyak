@@ -1,0 +1,11 @@
+Kategóriánként a termékek átlagára:
+SELECT kategoria, AVG(ear) FROM termek GROUP BY kategoria;
+π kategoria, AVG(ear) Y kategoria(termek)
+
+Termékenként az alkatrészek darabszáma (termékkód, dbszám)
+SELECT aru, db FROM egysegek GROUP BY aru;
+π aru, db Y aru(egysegek)
+
+Termékenként az alkatrészek darabszáma (terméknév, dbszám)
+SELECT nev, db FROM termek GROUP BY aru;
+π aru, db Y aru(egysegek)

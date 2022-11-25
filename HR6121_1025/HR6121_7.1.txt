@@ -1,0 +1,19 @@
+Könyvek címei:
+SELECT cim FROM KÖNYV
+π cim (KÖNYV)
+
+A 2000-nél drágább könyvek adatai:
+SELECT * FROM KÖNYV WHERE ar > 2000
+σ ar > 2000 (KÖNYV)
+
+Az 1000-nél olcsóbb könyvek címei:
+SELECT * FROM KÖNYV WHERE ar < 1000
+σ ar < 1000 (KÖNYV)
+
+A tárgyak nevei:
+SELECT targy FROM KÖNYV
+π targy (KÖNYV)
+
+Az 'AB' tárgyú könyvek címe és ára:
+SELECT cim, ar FROM KÖNYV WHERE targy = 'AB'
+π targy = 'AB' (KÖNYV)

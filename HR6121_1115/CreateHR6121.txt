@@ -1,0 +1,4 @@
+create table Oktato(neptunkod text(6), primary key (neptunkod), nev text(50), tanszek text (50));
+create table Targy(kod text(10), primary key (kod), kredit integer (2), megnevezes text (30));
+create table Hallgato(neptunkod text(6), primary key (neptunkod), nev text(50), tankor text(10), szuld DATE, eletkor integer(2), irszam integer (5), varos text(20), utca text(20), hsz integer(3));
+create table Hallgat(kod text(10), neptunkod text(6), foreign key(kod) references Targy(kod), foreign key(neptunkod) references Hallgato(neptunkod), felev integer(2), vizsgajegy integer(2));

@@ -1,0 +1,19 @@
+A könyvek darabszáma:
+SELECT isbn, COUNT * db FROM KÖNYV
+π isbn count (KÖNYV)
+
+A könyvek átlagára:
+SELECT avg (ar) FROM KÖNYV
+π avg ar (KÖNYV)
+
+Legolcsóbb könyv ára:
+SELECT isbn, ar FROM KÖNYV WHERE ar = (SELECT min(ar) FROM KÖNYV)
+π isbn, ar σ ar = (π min(ar)π min (ar) KÖNYV
+
+Az 'AB' kategóriájú könyvek darabszáma:
+SELECT isbn, COUNT * db FROM KÖNYV WHERE isbn = 'AB'
+π isbn count σ isbn = 'AB' (KÖNYV)
+
+A legnagyobb 'AB' kategórájú könyvek ára:
+SELECT isbn, ar FROM KÖNYV WHERE (isbn = 'AB', SELECT max(ar) FROM KÖNYV)
+π isbn, ar σ (π = 'AB', SELECT max(ar) (KÖNYV))

@@ -1,0 +1,7 @@
+1. select nev from oktato;
+2.
+3.
+4. 
+5.
+6. select count(*) from oktato where tanszek='AIF';
+
