@@ -1,7 +1,8 @@
-create table Autobusz(BID integer(5), primary key (BID), rendszam text(10), tipus text(25), max_hely integer(3));
-create table Sofor(SID integer(5), primary key (SID), jegykiado_szam text(10), nev text(25), BID integer(5), foreign key(BID) references Autobusz(BID));
-create table Karbantarto(KID integer(5), primary key (KID), javitoi_szam text(10), nev text(25), BID integer(5), foreign key(BID) references Autobusz(BID));
-create table Utvonal(UID integer(5), primary key (UID), kezdeti_allomas text(25), vegallomas text(25), km integer(3));
-create table Halad(BID integer(5), UID integer(5), menetido integer(3), foreign key(BID) references Autobusz(BID), foreign key(UID) references Utvonal(UID));
-create table Felugyelo(FID integer(5), primary key (FID), nev text(25), SID integer(5), KID integer(5), foreign key(SID) references Sofor(SID), foreign key(KID) references Karbantarto(KID), telefonszam integer(15), email text(25));
-create table Eszkoz(EID integer(5), primary key(EID), termek_szam integer(10), gyarto text(30), hasznalt_evek integer(2), KID integer(5), foreign key(KID) references Karbantarto(KID));
+create table Autobusz(BID integer(5) NOT NULL, primary key (BID), rendszam text(10) NOT NULL, tipus text(25) NOT NULL, max_hely integer(3) NOT NULL);
+create table Sofor(SID integer(5) NOT NULL, primary key (SID), jegykiado_szam text(10) NOT NULL, nev text(25) NOT NULL, BID integer(5) NOT NULL, foreign key(BID) references Autobusz(BID));
+create table Karbantarto(KID integer(5) NOT NULL, primary key (KID), javitoi_szam text(10) NOT NULL, nev text(25) NOT NULL, BID integer(5) NOT NULL, foreign key(BID) references Autobusz(BID));
+create table Utvonal(UID integer(5) NOT NULL, primary key (UID), kezdeti_allomas text(25) NOT NULL, vegallomas text(25) NOT NULL, km integer(3) NOT NULL);
+create table Halad(BID integer(5) NOT NULL, UID integer(5) NOT NULL, menetido integer(3) NOT NULL, foreign key(BID) references Autobusz(BID), foreign key(UID) references Utvonal(UID));
+create table Felugyelo(FID integer(5) NOT NULL, primary key (FID), nev text(25) NOT NULL, SID integer(5) NOT NULL, KID integer(5) NOT NULL, foreign key(SID) references Sofor(SID), foreign key(KID) references Karbantarto(KID), irodaszam integer(15), email text(25));
+create table Felugyelo_telefonszam(Telefonszam Varchar(20) NOT NULL, FID integer(5) NOT NULL, primary key(telefonszam), foreign key(FID) references Felugyelo(FID));
+create table Eszkoz(EID integer(5) NOT NULL, primary key(EID), termek_szam integer(10) NOT NULL, gyarto text(30) NOT NULL, hasznalt_evek integer(2) NOT NULL, KID integer(5) NOT NULL, foreign key(KID) references Karbantarto(KID));

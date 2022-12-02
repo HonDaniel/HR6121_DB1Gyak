@@ -26,6 +26,12 @@ insert into Karbantarto values(003,'C0003' ,'Katona József', 1);
 insert into Karbantarto values(004,'D0004' ,'Józsa Tünde', 8);
 insert into Karbantarto values(005,'E0005' ,'Szöllős Fruzsina', 9);
 
+insert into Eszkoz values(01, 42, 'Bosch', 3, 001);
+insert into Eszkoz values(02, 97, 'Bosch', 1, 002);
+insert into Eszkoz values(03, 55, 'Makita', 5, 003);
+insert into Eszkoz values(04, 12, 'Bosch', 0, 004);
+insert into Eszkoz values(05, 11, 'Bosch', 2, 005);
+
 insert into Utvonal values(2, 'Búza Tér', 'Tapolca', '8');
 insert into Utvonal values(3, 'Búza Tér', 'Szirma', '9');
 insert into Utvonal values(5, 'Felső-Majláth', 'Lillafüred', '6');
@@ -41,14 +47,14 @@ insert into Halad values(9, 5, 20);
 insert into Halad values(1, 35, 23);
 
 
-insert into Felugyelo values(01,'Pataki Csanád' , 102, 004, 709876543, 'pat.csan@gmail.com');
-insert into Felugyelo values(02,'Gábor Borbála' , 104, 002, 701234567, 'gab.bor@gmail.com');
-insert into Felugyelo values(03,'Szabó Oszkár' , 103, 001, 706549876, 'szab.osz@gmail.com');
-insert into Felugyelo values(04,'Hegyi Bora' , 108, 003, 701597463, 'hegy.bor@gmail.com');
-insert into Felugyelo values(05,'Nagy Andrea' , 109, 005, 709657412, 'nagy.and@gmail.com');
+insert into Felugyelo values(01,'Pataki Csanád' , 102, 004, 11, 'pat.csan@gmail.com');
+insert into Felugyelo values(02,'Gábor Borbála' , 104, 002, 12, 'gab.bor@gmail.com');
+insert into Felugyelo values(03,'Szabó Oszkár' , 103, 001, 13, 'szab.osz@gmail.com');
+insert into Felugyelo values(04,'Hegyi Bora' , 108, 003, 14, 'hegy.bor@gmail.com');
+insert into Felugyelo values(05,'Nagy Andrea' , 109, 005, 15, 'nagy.and@gmail.com');
 
-insert into Eszkoz values(01, 42, 'Bosch', 3, 001);
-insert into Eszkoz values(02, 97, 'Bosch', 1, 002);
-insert into Eszkoz values(03, 55, 'Makita', 5, 003);
-insert into Eszkoz values(04, 12, 'Bosch', 0, 004);
-insert into Eszkoz values(05, 11, 'Bosch', 2, 005);
+insert into Felugyelo_telefonszam(06702985601, 01);
+insert into Felugyelo_telefonszam(06700212678, 02);
+insert into Felugyelo_telefonszam(06701045230, 03);
+insert into Felugyelo_telefonszam(06706132569, 04);
+insert into Felugyelo_telefonszam(06708541455, 05);
